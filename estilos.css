@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f6f9;
+    color: #333333;
+}
+
+header {
+    background-color: #1b365d;
+    color: #ffffff;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+header h2 {
+    font-size: 1.3rem;
+    font-weight: normal;
+    color: #e6c667;
+}
+
+header p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    font-style: italic;
+    color: #d1d5db;
+}
+
+/* Barra de Navegación */
+nav {
+    background-color: #0f2342;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    font-weight: bold;
+}
+
+.contenedor {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+.seccion-inicio,
+.seccion-contenido {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.seccion-inicio h2,
+.seccion-contenido h2 {
+    color: #1b365d;
+    font-size: 1.8rem;
+}
+
+.seccion-inicio p,
+.seccion-contenido p {
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+    color: #444444;
+}
+
+.imagen-santo {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.imagen-santo img {
+    max-width: 100%;
+    width: 380px;
+    height: auto;
+    border-radius: 8px;
+    border: 3px solid #d4af37;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.imagen-santo figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #666666;
+    font-style: italic;
+}
+
+.grid-secciones {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.tarjeta-seccion {
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-top: 4px solid #1b365d;
+    padding: 1.5rem;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.tarjeta-seccion h3 {
+    color: #1b365d;
+    margin-bottom: 0.8rem;
+}
+
+.tarjeta-seccion p {
+    font-size: 0.95rem;
+    color: #666666;
+    margin-bottom: 1.2rem;
+}
+
+.boton-enlace {
+    display: inline-block;
+    background-color: #1b365d;
+    color: #ffffff;
+    padding: 0.5rem 1.2rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.boton-enlace:hover {
+    background-color: #d4af37;
+    color: #0f2342;
+}
+
+/* Listas y Destacados */
+ul.lista-puntos {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+ul.lista-puntos li {
+    margin-bottom: 0.5rem;
+}
+
+.pregunta-quiz {
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-left: 4px solid #1b365d;
+    padding: 1.2rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+}
+
+.pregunta-quiz p {
+    font-weight: bold;
+    color: #1b365d;
+    margin-bottom: 0.8rem;
+}
+
+.opciones-quiz label {
+    display: block;
+    padding: 0.4rem 0;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #333333;
+}
+
+.opciones-quiz input[type="radio"] {
+    margin-right: 0.6rem;
+}
+
+.boton-quiz {
+    background-color: #1b365d;
+    color: #ffffff;
+    border: none;
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton-quiz:hover {
+    background-color: #d4af37;
+    color: #0f2342;
+}
+
+.resultado-quiz {
+    display: none;
+    margin-top: 1.5rem;
+    padding: 1.2rem;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.resultado-exito {
+    background-color: #d1fae5;
+    color: #065f46;
+    border: 1px solid #a7f3d0;
+}
+
+.resultado-regular {
+    background-color: #fef3c7;
+    color: #92400e;
+    border: 1px solid #fde68a;
+}
+
+footer {
+    background-color: #1b365d;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 3rem;
+    border-top: 3px solid #d4af37;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li a {
+        padding: 0.8rem;
+        border-bottom: 1px solid #1b365d;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+}
